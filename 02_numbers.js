@@ -2,7 +2,7 @@
 
 // const num = 42 // * ingtegral
 // const float = 42.42 // * float
-// const pow = 10e3 // ? 10*10*10*10 ==> 10000
+// const pow = 10e3 // ? 10*10^3 ==> 10000
 // console.log(pow)
 // console.log('MAX_SAFE_INTEGER ', Number.MAX_SAFE_INTEGER)
 // console.log('Math.pow 53 ',Math.pow(2,53)-1)
