@@ -68,24 +68,58 @@
 // 	}
 // }
 //? 10
-const n = 5
-switch(n){
-	case 0:
-		console.log('zero');
-		break;
-	case 1:
-		console.log('one');
-		break;
-	case 2:
-		console.log('two');
-		break;
-	case 3:
-		console.log('three');
-		break;
-	case 4:
-		console.log('four');
-		break;
-	case 5:
-		console.log('five');
-		break;
-	}
+// const n = 5
+// switch(n){
+// 	case 0:
+// 		console.log('zero');
+// 		break;
+// 	case 1:
+// 		console.log('one');
+// 		break;
+// 	case 2:
+// 		console.log('two');
+// 		break;
+// 	case 3:
+// 		console.log('three');
+// 		break;
+// 	case 4:
+// 		console.log('four');
+// 		break;
+// 	case 5:
+// 		console.log('five');
+// 		break;
+// 	}
+//? 11
+// function hello1(){
+// 	return 'Hello, JavaScript'
+// }
+// console.log(hello1())
+//? 12
+// function hello2(name){
+// 	if(name === undefined){
+// 		console.log('Hi, Guest');
+// 	} else {
+// 		console.log('Hello, ' + name);
+// 	}
+// }
+// hello2()
+//? 13
+// function mul(n,m){
+// 	return n + m
+// }
+// console.log(mul(5,10));
+//? 14
+// function repeat(str, n = 2){
+// 	let stroke = ''
+// 	for(i = 1; i <= n; i++){
+// 		stroke += str
+// 	}
+// 	return stroke;
+// }
+// console.log(repeat('Hello dude ! '))
+//? 15
+// function rgb(red = 0, green = 0, blue = 0){
+// 	return `rgb(${red},${green},${blue})`
+// }
+// console.log(rgb(12,35,66));
+//? 16
