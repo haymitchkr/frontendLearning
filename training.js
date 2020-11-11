@@ -123,3 +123,154 @@
 // }
 // console.log(rgb(12,35,66));
 //? 16
+// function getObj(){
+// 	return this
+// }
+// const city1 = {
+// 	name: 'Cityzen',
+// 	population: 1e7,
+// 	getName(){
+// 		return this.name
+// 	},
+// 	exportStr(){
+// 		return `name=${this.name} population=${this.population}`
+// 	}
+// }
+// const city2 = {
+// 	name: 'CityN',
+// 	population: 1e6,
+// 	getName(){
+// 		return this.name
+// 	},
+// 	exportStr(){
+// 		return `name=${this.name} population=${this.population}`
+// 	},
+// 	getCity(){
+// 		getObj()
+// 	}
+// }
+
+// city1.getName()
+// city2.getName()
+// console.log(city1.exportStr());
+// console.log(city2.exportStr(), city2.getCity(this));
+//? 17
+// const obj = {
+// 	method1(){
+// 		return this
+// 	},
+// 	method2(){
+// 		return this
+// 	},
+// 	method3(){
+// 		return 'метод3'
+// 	}
+// }
+// obj.method1().method2().method3()
+// console.log(obj.method1().method2().method3());
+//? 18
+// const d1 = [45,78,10,3]
+// d1[7] = 100
+// console.log(d1,d1[6],d1[7]);
+// const d2 = [45,78,10,3]
+// const d3 = [45,78,10,3]
+// const d4 = [45,78,10,3]
+// d3[7] = 100
+// let sumd2 = 0
+// let sumd3 = 0
+// function sumCalcualte(sum, massive) {
+// 	for(i = 0; i < massive.length; i++) {
+// 		sum += d2[i]
+// 	}
+// 	console.log(sum);
+// }
+// sumCalcualte(sumd2, d2)
+// for (key in d3){
+// 	sumd3 += d3[key]
+// }
+// console.log(sumd3);
+// function my(a,b){
+// 	return b - a
+// }
+// d4.sort(my)
+// console.log(d4);
+
+//? Двумерные массивы
+let dblmas = [
+	[1,2,3],
+	[4,5,6],
+	[7,8,9],
+]
+let out = ''
+
+// console.log(dblmas);
+// for (let i = 0; i < dblmas.length; i++){
+	// console.log(dblmas[i]);
+	
+	// let c = dblmas[i]
+	// for ( let k = 0; k < c.length; k++){
+	// 	console.log(c[k]);
+	// }
+	// for ( let k = c.length - 1; k >= 0; k--){
+	// 	console.log(c[k]);
+	// }
+for (let i = 0; i < dblmas.length; i++){
+	for (let k = 0; k < dblmas[i].length; k++){
+		// console.log(dblmas[i][k]);
+		out += dblmas[i][k] + ' '
+	}
+	out += '<br>'
+}
+document.querySelector('.out').innerHTML = out
+out = ''
+for (let i = 0; i < dblmas.length; i++){
+	for (let k = 0; k < dblmas[i].length; k++){
+		// console.log(dblmas[i][k]);
+		if (dblmas[i][k] > 4){
+			out += dblmas[i][k] + ' '
+		}
+	}
+	out += '<br>'
+}
+console.log(out);
+
+let d = [1,0,0,0,0];
+document.querySelector('.out2').innerHTML = d
+let k = 0
+document.querySelector('button').onclick = () => {
+	if (k + 1 < 5){
+		d[k] = 0
+		d[k + 1] = 1
+		k++
+	} else {
+		d[k] = 0
+		k = 0
+		d[k] = 1
+	}
+	document.querySelector('.out2').innerHTML = d
+}
+// * Создание двумерного массива с заданным коливеством элементов
+//? n количество элементов массива
+//? m количество элементов внутри элемента массива
+//? s значение элемента
+const massive = []
+function massiveCreate(n = 3,m = 4,s = 0){
+	let mIndex = []
+	function massiveCreate2(){
+		for(let i = 0; i <= m - 1; i++){
+			mIndex.push(s)
+		}
+	}
+	massiveCreate2()
+	for (let i = 0; i <= n - 1; i++){
+		massive.push(mIndex)
+	}
+}
+//? Вывод массива в консоль
+massiveCreate()
+console.log(massive)
+for (let i = 0; i < massive.length; i++){
+	for(let k = 0; k < massive[i].length; k++){
+		console.log(massive[i][k])
+	}
+}
