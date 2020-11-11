@@ -196,12 +196,12 @@
 // console.log(d4);
 
 //? Двумерные массивы
-let dblmas = [
-	[1,2,3],
-	[4,5,6],
-	[7,8,9],
-]
-let out = ''
+// let dblmas = [
+// 	[1,2,3],
+// 	[4,5,6],
+// 	[7,8,9],
+// ]
+// let out = ''
 
 // console.log(dblmas);
 // for (let i = 0; i < dblmas.length; i++){
@@ -214,41 +214,41 @@ let out = ''
 	// for ( let k = c.length - 1; k >= 0; k--){
 	// 	console.log(c[k]);
 	// }
-for (let i = 0; i < dblmas.length; i++){
-	for (let k = 0; k < dblmas[i].length; k++){
-		// console.log(dblmas[i][k]);
-		out += dblmas[i][k] + ' '
-	}
-	out += '<br>'
-}
-document.querySelector('.out').innerHTML = out
-out = ''
-for (let i = 0; i < dblmas.length; i++){
-	for (let k = 0; k < dblmas[i].length; k++){
-		// console.log(dblmas[i][k]);
-		if (dblmas[i][k] > 4){
-			out += dblmas[i][k] + ' '
-		}
-	}
-	out += '<br>'
-}
-console.log(out);
+// for (let i = 0; i < dblmas.length; i++){
+// 	for (let k = 0; k < dblmas[i].length; k++){
+// 		console.log(dblmas[i][k]);
+// 		out += dblmas[i][k] + ' '
+// 	}
+// 	out += '<br>'
+// }
+// document.querySelector('.out').innerHTML = out
+// out = ''
+// for (let i = 0; i < dblmas.length; i++){
+// 	for (let k = 0; k < dblmas[i].length; k++){
+//			 console.log(dblmas[i][k])
+// 		if (dblmas[i][k] > 4){
+// 			out += dblmas[i][k] + ' '
+// 		}
+// 	}
+// 	out += '<br>'
+// }
+// console.log(out);
 
-let d = [1,0,0,0,0];
-document.querySelector('.out2').innerHTML = d
-let k = 0
-document.querySelector('button').onclick = () => {
-	if (k + 1 < 5){
-		d[k] = 0
-		d[k + 1] = 1
-		k++
-	} else {
-		d[k] = 0
-		k = 0
-		d[k] = 1
-	}
-	document.querySelector('.out2').innerHTML = d
-}
+// let d = [1,0,0,0,0];
+// document.querySelector('.out2').innerHTML = d
+// let k = 0
+// document.querySelector('button').onclick = () => {
+// 	if (k + 1 < 5){
+// 		d[k] = 0
+// 		d[k + 1] = 1
+// 		k++
+// 	} else {
+// 		d[k] = 0
+// 		k = 0
+// 		d[k] = 1
+// 	}
+// 	document.querySelector('.out2').innerHTML = d
+// }
 // * Создание двумерного массива с заданным коливеством элементов
 //? n количество элементов массива
 //? m количество элементов внутри элемента массива
@@ -256,18 +256,16 @@ document.querySelector('button').onclick = () => {
 const massive = []
 function massiveCreate(n = 3,m = 4,s = 0){
 	let mIndex = []
-	function massiveCreate2(){
-		for(let i = 0; i <= m - 1; i++){
-			mIndex.push(s)
-		}
+	for(let i = 0; i <= m - 1; i++){
+		mIndex.push(s)
 	}
-	massiveCreate2()
 	for (let i = 0; i <= n - 1; i++){
 		massive.push(mIndex)
 	}
 }
+//? Создаём массив
+massiveCreate(3,4,5)
 //? Вывод массива в консоль
-massiveCreate()
 console.log(massive)
 for (let i = 0; i < massive.length; i++){
 	for(let k = 0; k < massive[i].length; k++){
