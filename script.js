@@ -3,7 +3,6 @@ window.onload = function () {
   let year = today.getFullYear();
   let month = today.getMonth();
   let daysCell = document.querySelector(".days__wrapper").children;
-  console.log(daysCell);
   createCalendar();
 
   // Название месяца
@@ -33,7 +32,6 @@ window.onload = function () {
   function createCalendar() {
     let daysAmount = daysInMonth(month, year);
     let firstDayWeek = new Date(year, month, 0).getDay();
-    console.log(daysAmount);
     function clear() {
       Array.prototype.forEach.call(daysCell, (child) => {
         child.innerHTML = `&nbsp;`;
@@ -43,11 +41,6 @@ window.onload = function () {
       for (let i = 0; i < daysAmount; i++) {
         daysCell[indexDay + i].innerHTML = `${i + 1}`;
       }
-      // for (let i = daysAmount + 1; i < daysCell.length; i++) {
-      //   console.log(daysAmount);
-      //   console.log(daysCell.length);
-      //   daysCell[i].innerHTML = `&nbsp;`;
-      // }
     }
     clear();
     if (firstDayWeek === 0) fill(0);
@@ -72,7 +65,6 @@ window.onload = function () {
       year = yearInput;
       month = monthInput - 1;
     }
-    console.log(year, month);
     titleName();
     createCalendar();
   };
