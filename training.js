@@ -253,22 +253,94 @@
 //? n количество элементов массива
 //? m количество элементов внутри элемента массива
 //? s значение элемента
-const massive = []
-function massiveCreate(n = 3,m = 4,s = 0){
-	let mIndex = []
-	for(let i = 0; i <= m - 1; i++){
-		mIndex.push(s)
-	}
-	for (let i = 0; i <= n - 1; i++){
-		massive.push(mIndex)
-	}
-}
+// const massive = []
+// function massiveCreate(n = 3,m = 4,s = 0){
+// 	let mIndex = []
+// 	for(let i = 0; i <= m - 1; i++){
+// 		mIndex.push(s)
+// 	}
+// 	for (let i = 0; i <= n - 1; i++){
+// 		massive.push(mIndex)
+// 	}
+// }
 //? Создаём массив
-massiveCreate(3,4,5)
+// massiveCreate(3,4,5)
 //? Вывод массива в консоль
-console.log(massive)
-for (let i = 0; i < massive.length; i++){
-	for(let k = 0; k < massive[i].length; k++){
-		console.log(massive[i][k])
-	}
-}
+// console.log(massive)
+// for (let i = 0; i < massive.length; i++){
+// 	for(let k = 0; k < massive[i].length; k++){
+// 		console.log(massive[i][k])
+// 	}
+// }
+//? 19 Конструкторы
+// function Card(from,to){
+// 	this.from = from
+// 	this.to = to
+// 	this.show = function show() {
+// 		return `${from},${to}`
+// 	}
+// }
+// const s1 = new Card('Екатеринбург','Москва')
+// console.log(s1.show());
+//? 20
+// class Human {
+// 	constructor(name, age, height){
+// 		this.name = name
+// 		this.age = age
+// 		this.height = height	
+// 	}
+// 	getInfo(){
+// 		return `${this.name}, ${this.age}, ${this.height}`
+// 	}
+// 	get firstName(){
+// 		return this.name
+// 	}
+// }
+// let humans = [
+// 	new Human('Коля', 23, 180),
+// 	new Human('Даша', 19, 170),
+// 	new Human('Ваня', 18, 192),
+// 	new Human('Петя', 45, 178 ),
+// 	new Human('Вася', 34, 197),
+// 	new Human('Джони', 40, 168),
+// 	new Human('Катя', 37, 160),
+// 	new Human('Петя', 29, 200),
+// 	new Human('Соня', 21, 172),
+// 	new Human('Женя', 25, 175),
+// ]
+// function sortByName(a, b){
+// 	if(a.name < b.name){
+// 		return -1
+// 	}
+// 	if(a.name > b.name){
+// 		return 1
+// 	}else {
+// 	return 0
+// 	}
+// }
+// function sortByHeight(a, b){
+// 	if (a.height < b.height){
+// 		return 1
+// 	}
+// 	if (a.height > b.height){
+// 		return -1
+// 	} else 
+// 	return 0
+// }
+// humans.sort(sortByName)
+// humans.sort(sortByHeight)
+// console.log(humans);
+// const dt1 = new Date('January 1, 2045 0:00')
+// const dt2 = Date.now() / 1000
+// function getDays(year, mounth){
+// 	if(0 < mounth, mounth > 12){
+// 		console.log('Error. Incorrect mounth');
+// 	}
+// 	else {
+// 		const date1 = new Date(year, mounth - 1)
+// 		const date2 = new Date(year, mounth)
+// 		let days = Math.floor((date2 - date1)/1000/60/60/24)
+// 		return days
+// 	}
+// }
+// getDays(2090, 1)

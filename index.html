@@ -10,13 +10,84 @@
 
 <body>
 
-	<h1 id="hello" class="heading">Hello world!</h1>
+	<!-- <h1 id="hello" class="heading">Hello world!</h1>
 	<h2 id="sub-hello" class="h2-class">This is heading 2</h2>
 	<h2><a href="https://developer.mozilla.org/ru/docs/Web/Events" target="_blank">Another h2</a></h2>
 	<div class="out"></div>
 	<div>
 		<button>Push</button>
 		<div class="out2"></div>
+	</div> -->
+	<div class="container">
+		<div class="calendar">
+			<h1>Monthly calendar</h1>
+			<form onsubmit="event.preventDefault()">
+				<h2>Enter month and year</h2>
+				<input class="month-input" type="number" max="12" min="1" placeholder="month">
+				<input class="year-input" type="number" placeholder="year" min="1970" max="2100">
+				<button class="submit" type="submit">Enter</button>
+			</form>
+			<div class=" calendar-table">
+				<h2 class="month-title"></h2>
+				<div class="calendar-table__items calendar-items">
+					<div class="calendar-items__days days">
+						<div class="days__week-wrapper">
+							<div class="days__week-day">Monday</div>
+							<div class="days__week-day">Tuesday</div>
+							<div class="days__week-day">Wednesday</div>
+							<div class="days__week-day">Thursday</div>
+							<div class="days__week-day">Friday</div>
+							<div class="days__week-day">Saturday</div>
+							<div class="days__week-day">Sunday</div>
+						</div>
+						<div class="days__wrapper">
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+							<div class="days__day">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="script.js"></script>
 	<script src="training.js"></script>

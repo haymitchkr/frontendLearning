@@ -1,7 +1,70 @@
-body {
-  background-color: lightgrey;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-h1 {
-  color: black;
+body {
+  background-color: lightgrey;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #494949;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1.5px solid green;
+}
+
+button.submit {
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.calendar-table {
+  background-color: white;
+  text-align: center;
+  padding: 1px 0 20px 0;
+}
+
+.calendar-table .calendar-items__days {
+  margin: 0 auto;
+}
+
+.calendar-table .calendar-items .days {
+  width: 90%;
+}
+
+.calendar-table .calendar-items .days__week-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calendar-table .calendar-items .days__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.calendar-table .calendar-items .days__week-day {
+  width: 14%;
+  padding: 5px 0;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.calendar-table .calendar-items .days__day {
+  margin: 0;
+  width: 14%;
+  padding: 5px 0;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
