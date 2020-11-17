@@ -34,6 +34,11 @@ window.onload = function () {
     let daysAmount = daysInMonth(month, year);
     let firstDayWeek = new Date(year, month, 0).getDay();
     console.log(daysAmount);
+    function clear() {
+      Array.prototype.forEach.call(daysCell, (child) => {
+        child.innerHTML = `&nbsp;`;
+      });
+    }
     function fill(indexDay) {
       for (let i = 0; i < daysAmount; i++) {
         daysCell[indexDay + i].innerHTML = `${i + 1}`;
@@ -44,6 +49,7 @@ window.onload = function () {
       //   daysCell[i].innerHTML = `&nbsp;`;
       // }
     }
+    clear();
     if (firstDayWeek === 0) fill(0);
     if (firstDayWeek === 1) fill(1);
     if (firstDayWeek === 2) fill(2);
